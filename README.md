@@ -41,7 +41,7 @@ CGDPO에서는 policy network만 등장하고 value network는 나타나지 않�
 
 ## CGDPO-ML과 MC의 성능 비교
 
-2024년 9월 기준으로 본 알고리즘은 option pricing을 하는 가장 유연한 도구 중 하나입니다. 이론적으로는 어떤 model이 제시되든지 간에 짧은 시간 안에 모든 종류의 option 종류에 대한 pricing이 가능합니다. 이론이 잘 작동하는지 확인하기 위해 본 연구에서는 우선 Black-Scholes model에서 아래 3가지 옵션에 대해 실험이 진행되었습니다. 벤치마크 방법은 option pricing을 위해 널리 사용되는 유한차분법(FDM)과 몬테카를로 시뮬레이션(MC) 입니다.
+2024년 9월 기준으로 본 알고리즘은 option pricing을 하는 가장 유연한 도구 중 하나입니다. 이론적으로는 어떤 model이 제시되든지 간에 짧은 시간 안에 모든 종류의 option 종류에 대한 pricing이 가능합니다. 우선 이론이 잘 작동하는지 확인하기 위해 본 연구에서는 Black-Scholes model에서 아래 3가지 옵션에 대해 실험이 진행되었습니다. 벤치마크 방법은 option pricing을 위해 널리 사용되는 유한차분법(FDM)과 몬테카를로 시뮬레이션(MC) 입니다.
 
 ### European Vanilla Call
 | | 1min | 5min | 10min | 30min | 60min |
