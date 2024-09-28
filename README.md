@@ -64,13 +64,6 @@ CGDPO에서는 policy network만 등장하고 value network는 나타나지 않�
 | FDM |  |  |  |  |  |
 | MC |  |  |  |  |  |
 
-### European Basket Call (5 assets)
-| | 1min | 5min | 10min | 30min | 60min |
-|--------|------|------|------|-------|-------|
-| CGDPO-ML |  |  | |  |  |
-| FDM |  |  |  |  |  |
-| MC |  |  |  |  |  |
-
 ### European Basket Call (30 assets)
 | | 1min | 5min | 10min | 30min | 60min |
 |--------|------|------|------|-------|-------|
@@ -79,13 +72,6 @@ CGDPO에서는 policy network만 등장하고 value network는 나타나지 않�
 | MC |  |  |  |  |  |
 
 ### American Basket Call (2 assets)
-| | 1min | 5min | 10min | 30min | 60min |
-|--------|------|------|------|-------|-------|
-| CGDPO-ML |  |  | |  |  |
-| FDM |  |  |  |  |  |
-| MC |  |  |  |  |  |
-
-### American Basket Call (5 assets)
 | | 1min | 5min | 10min | 30min | 60min |
 |--------|------|------|------|-------|-------|
 | CGDPO-ML |  |  | |  |  |
@@ -115,4 +101,18 @@ CGDPO에서는 policy network만 등장하고 value network는 나타나지 않�
     <img src="./vanilla/image/vanilla_sol.png" alt="바닐라 정답" width="45%">
 </div>
 
-왼쪽은 소비량을 예측하는 신경망 결과이고, 오른쪽은 투자량을 예측하는 신경망의 결과물입니다. 5분만에 매우 정확한 답을 얻음을 확인할 수 있습니다. 에러가 작다는 사실은 매칭되는 아래의 에러에 관한 그림을 봐도 확인됩니다.
+왼쪽은 옵션 가격을 예측하는 신경망 결과이고, 오른쪽은 Black-Scholes formula로 얻어진 정답입니다. 1분만에 매우 정확한 답을 얻음을 확인할 수 있습니다. 
+
+### European Basket Call (2 assets)
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./basket/image/1min_basket_net_a.png" alt="1분 배스킷 신경망 a" width="45%">
+    <img src="./basket/image/basket_sol_a.png" alt="배스킷 정답 a" width="45%">
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./basket/image/1min_basket_net_b.png" alt="1분 배스킷 신경망 b" width="45%">
+    <img src="./basket/image/basket_sol_b.png" alt="배스킷 정답 b" width="45%">
+</div>
+
+이전과 마찬가지로 왼쪽은 옵션 가격을 예측하는 신경망 결과이고, 오른쪽은 Black-Scholes formula로 얻어진 정답입니다. 1분만에 매우 정확한 답을 얻음을 확인할 수 있습니다. 윗줄은 t=0.1일 때의 결과에 대응하며, 아랫줄은 t=1일 때의 결과에 대응합니다.
