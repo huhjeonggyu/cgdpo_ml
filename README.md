@@ -1,6 +1,6 @@
 ## CGDPO-ML 알고리즘 소개
 
-CGDPO-ML(CGDPO - Martingale Loss)는 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장하여 금융 분야의 option pricing에 응용하는 강화학습 알고리즘입니다. 물론 금융 분야 이외의 stochastic optimal control problem에도 적용될 수 있습니다.
+CGDPO-ML(CGDPO - Martingale Loss)은 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장하여 금융 분야의 option pricing에 응용하는 강화학습 알고리즘입니다. 물론 금융 분야 이외의 stochastic optimal control problem에도 적용될 수 있습니다.
 
 본 알고리즘은 다음 연구자에 의해 개발되었습니다:
 * 성균관대 수학과 허정규 교수
