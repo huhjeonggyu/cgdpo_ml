@@ -26,7 +26,7 @@ REINFORCE 알고리즘과 1,2번은 동일하지만 3,4,5번에서 차별화됩�
 
 ## CGDPO-ML 알고리즘의 세부 설명
 
-CGDPO-ML 알고리즘은 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장한 알고리즘입니다. 즉, 
+CGDPO-ML 알고리즘은 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장한 알고리즘입니다. 다시 말해, 
 
 CGDPO-ML = CGDPO : 정책 개선 + ML : 가치 평가
 
