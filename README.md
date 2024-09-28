@@ -34,7 +34,7 @@ CGDPO에서는 policy network만 등장하고 value network는 나타나지 않�
 
 * Jia, Y., & Zhou, X. Y. (2022). Policy gradient and actor-critic learning in continuous time and space: Theory and algorithms. Journal of Machine Learning Research, 23(275), 1-50.
 
-위 연구는 연속 확률 모형에서 policy evaluation에 대한 핵심적 이론을 제공합니다. 이 연구에서 CGDPO-ML을 위해 차용한 것은 아래와 같습니다.
+위 연구는 연속 확률 모형에서 policy evaluation에 대한 핵심적 이론을 제공합니다. 이 연구에서 CGDPO를 CGDPO-ML로 확장하기 위해 차용한 것은 아래와 같습니다.
 
 1. Martingale loss를 이용한 policy evaluation
 2. Martingale orthogonality condition을 이용한 어댑티브 샘플링의 개선
