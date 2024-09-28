@@ -1,11 +1,11 @@
 ## CGDPO-ML 알고리즘 소개
 
-CGDPO+ML(CGDPO + Martingale Loss)는 정책 개선에만 집중하는 CGDPO 알고리즘을 가치 평가에 확장하여 금융 분야의 option pricing에 응용하는 강화학습 알고리즘입니다. 물론 금융 분야 이외의 stochastic optimal control problem에도 적용될 수 있습니다.
+CGDPO-ML(CGDPO - Martingale Loss)는 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장하여 금융 분야의 option pricing에 응용하는 강화학습 알고리즘입니다. 물론 금융 분야 이외의 stochastic optimal control problem에도 적용될 수 있습니다.
 
 본 알고리즘은 다음 연구자에 의해 개발되었습니다:
 * 성균관대 수학과 허정규
 
-궁금한 점이 있으시면 저자 중 허정규 교수에게 메일(jghuh@skku.edu)로 문의 부탁드립니다. 이 프로젝트는 현재 진행중으로 연구에 이용하신다면 다음을 인용 부탁드립니다.
+궁금한 점이 있으시면 허정규 교수에게 메일(jghuh@skku.edu)로 문의 부탁드립니다. 이 프로젝트는 현재 진행중으로 연구에 이용하신다면 다음을 인용 부탁드립니다.
 
 Huh, J., Koo, H. K., & Lim, B. H. (2024, July). Continuous-time portfolio optimization via model-based reinforcement learning [Paper presentation]. 2024 Asia/Pacific Conference, Financial Management Association International, Seoul, South Korea.
 
@@ -24,16 +24,11 @@ REINFORCE 알고리즘과 1,2번은 동일하지만 3,4,5번에서 차별화됩�
 
 ## CGDPO-ML 알고리즘이란
 
-CGDPO 알고리즘은 REINFORCE 알고리즘의 변형으로 다음과 같은 특징이 있습니다.
+CGDPO-ML 알고리즘은 policy update에만 집중하는 CGDPO 알고리즘을 policy evaluation까지 되게끔 확장한 알고리즘입니다. CGDPO에서는 policy network만 등장하고 value network는 나타나지 않는 반면, CGDPO-ML에서는 두 유형의 신경망이 모두 등장합니다. 그럼에도 policy update에 value network가 직접적으로 관여하지 않기 때문에 여전히 정책 기반 강화학습으로 분류되어야 합니다. 어댑티브 샘플링에 value network가 관여하기 때문에 polciy update에 관여하기는 하지만, actor-crtic 계통의 알고리즘처럼 policy network의 gradient를 추정하기위해 value network를 활용하는 방식이 아닙니다.
 
 1. 모델 기반 강화학습
-2. 정책 기반 강화학습
-3. 역전파를 이용한 정책 신경망의 직접 학습
-4. 연속 시간 문제 해결을 위한 초기 상태 랜덤 샘플링
-5. 오차가 높은 부분을 타개하기 위한 어댑티브 샘플링
    
-REINFORCE 알고리즘과 1,2번은 동일하지만 3,4,5번에서 차별화됩니다. CGDPO에 관한 자세한 설명이 필요한 분은 다음 발표 자료를 참고하세요:
-[PPT(24.09)](https://drive.google.com/file/d/1Oy4faY7PMiEI09mdIJWxmKPeEJ2CZ5aD/view?usp=sharing)
+
 
 ## CGDPO와 PPO의 성능 비교
 
